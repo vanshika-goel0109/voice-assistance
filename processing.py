@@ -29,8 +29,8 @@ elif 'Yahoo' in r2.recognize_google(audio):
     r2 = sr.Recognizer()
     url = 'https://www.yahoo.com/search?q='
     func()
-
-
+else:
+    print('please choose between yahoo or google.)
 
 
 
