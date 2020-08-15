@@ -6,7 +6,6 @@ r2 = sr.Recognizer()
 
 with sr.Microphone() as source:
     r2.adjust_for_ambient_noise(source, duration=5)
-    print('[search: google search: youtube ]')
     print('speak now...')
     audio = r2.listen(source)
     print(r2.recognize_google(audio))
